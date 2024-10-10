@@ -37,3 +37,42 @@ This project utilizes OpenCV and Tesseract OCR to extract text from images. It p
    ```bash
    python text_extraction.py
 3. The extracted text will be printed in the console.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+# With Deployment
+# OCR Web Application
+
+## Overview
+This web application allows users to upload images and extract text in Hindi and English using Optical Character Recognition (OCR). Users can also search for specific keywords within the extracted text.
+
+## Requirements
+- Python 3.x
+- Libraries: `gradio`, `pytesseract`, `Pillow`, `opencv-python-headless`, `numpy`
+
+## Setup Instructions
+    ```
+
+1. **Create a Virtual Environment**:
+    ```bash
+    python -m venv ocr_env
+    source ocr_env/bin/activate
+    ```
+
+2. **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Run the Application Locally**:
+    ```bash
+    python app.py
+    ```
+    Open your browser and go to `http://127.0.0.1:7860`.
+
+## Deployment Instructions
+The application is deployed on Hugging Face Spaces. You can access it at:
+[Live URL](<https://huggingface.co/spaces/YU14/ImagetotextAppl>)
+
+## Example Usage
+- Upload an image containing Hindi and English text.
+- Enter a keyword in the textbox and click "Submit" to see highlighted occurrences in the extracted text.
